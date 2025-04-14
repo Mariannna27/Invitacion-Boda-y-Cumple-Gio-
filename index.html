@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
   <style>
     body {
-      height: 100%;      
+      height: 100%;
       font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 0;
@@ -20,12 +20,13 @@
       padding: 3rem 2rem;
       background: rgba(0, 0, 0, 0.6);
     }
-    h1, h2, p {
+    .titulo-principal p {
+      font-size: 2rem;
       margin: 0.5rem 0;
     }
     .fecha {
-      font-size: 2rem; /* Tamaño mediano para la fecha */
-      font-weight: bold;
+      font-size: 2.2rem;
+      margin-top: 1rem;
     }
     section {
       padding: 2rem;
@@ -64,22 +65,40 @@
       margin-top: 2rem;
       width: 100%;
     }
+    @media (max-width: 600px) {
+      .titulo-principal p {
+        font-size: 1.5rem;
+      }
+      .fecha {
+        font-size: 1.4rem;
+      }
+      section {
+        padding: 1rem;
+        margin: 0.5rem;
+      }
+      .button {
+        width: 90%;
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+      }
+      iframe {
+        height: 250px;
+      }
+      audio {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Sergio Sánchez de la Cruz & Mariana Dorantes Pérez</h1>
-    <h2>¡Nos casamos!</h2>
-    <p>Y también celebramos el cumpleaños número 3 de nuestra hija Giomara Sánchez Dorantes</p>
-    <p><strong><span class="fecha">27 de septiembre del 2025</span></strong></p>
+    <div class="titulo-principal">
+      <p>Sergio Sánchez de la Cruz & Mariana Dorantes Pérez</p>
+      <p>¡Nos casamos!</p>
+      <p>Y también celebramos el cumpleaños número 3 de nuestra hija Giomara Sánchez Dorantes</p>
+    </div>
+    <p class="fecha"><strong>27 de septiembre del 2025</strong></p>
   </header>
-
-<style>
-  .celebration {
-    font-size: 1.5rem; /* Tamaño de letra más grande */
-    font-weight: bold;
-  }
-</style>
 
   <section class="itinerary">
     <h2>Itinerario</h2>
@@ -118,12 +137,12 @@
   </section>
 
   <section>
-  <h2>Nuestra canción</h2>
-  <p>All of Me - John Legend</p>
-  <audio controls autoplay loop muted>
-    <source src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/main/imtiaz252_all-of-me-john-legend-lindsey-stirling.mp3" type="audio/mpeg">
-  </audio>
+    <h2>Nuestra canción</h2>
+    <p>All of Me - John Legend</p>
+    <audio controls autoplay loop>
+      <source src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/main/imtiaz252_all-of-me-john-legend-lindsey-stirling.mp3" type="audio/mpeg">
+    </audio>
     <small>🔈 Si no escuchas la música, toca el botón de play 🎵</small>
-</section>
+  </section>
 </body>
-</html> height: 100%
+</html>
