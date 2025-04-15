@@ -1,11 +1,18 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
+
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Invitación de Boda y Cumpleaños</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+
   <style>
+
     body {
       height: 100%;
       font-family: 'Montserrat', sans-serif;
@@ -15,19 +22,23 @@
       background-size: cover;
       color: #fff;
     }
+
     header {
       text-align: center;
       padding: 3rem 2rem;
       background: rgba(0, 0, 0, 0.6);
     }
+
     .titulo-principal p {
       font-size: 2rem;
       margin: 0.5rem 0;
     }
+
     .fecha {
       font-size: 2.2rem;
       margin-top: 1rem;
     }
+
     section {
       padding: 2rem;
       text-align: center;
@@ -35,6 +46,7 @@
       margin: 1rem;
       border-radius: 1rem;
     }
+
     .itinerary, .map, .rsvp, .gifts {
       max-width: 700px;
       margin: 2rem auto;
@@ -42,6 +54,7 @@
       padding: 1.5rem;
       border-radius: 1rem;
     }
+
     .button {
       display: inline-block;
       background: #e91e63;
@@ -52,45 +65,110 @@
       text-decoration: none;
       transition: background 0.3s;
     }
+
     .button:hover {
       background: #c2185b;
     }
+
     iframe {
       border: none;
       width: 100%;
       height: 300px;
       border-radius: 0.5rem;
     }
+
     audio {
       margin-top: 2rem;
       width: 100%;
     }
+
+    /* Estilo Polaroid Vintage */
+    .photo-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .photo-container img {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transform: rotate(-2deg);
+      margin-bottom: 10px;
+      transition: transform 0.3s;
+    }
+
+    .photo-container img:hover {
+      transform: rotate(0deg);
+    }
+
+    .photo-item {
+      position: relative;
+      width: 30%;
+    }
+
+    @media (max-width: 768px) {
+      .photo-item {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .photo-item {
+        width: 90%;
+      }
+    }
+
     @media (max-width: 600px) {
       .titulo-principal p {
         font-size: 1.5rem;
       }
+
       .fecha {
         font-size: 1.4rem;
       }
+
       section {
         padding: 1rem;
         margin: 0.5rem;
       }
+
       .button {
         width: 90%;
         padding: 0.8rem 1rem;
         font-size: 1rem;
       }
+
       iframe {
         height: 250px;
       }
+
       audio {
         width: 100%;
       }
     }
+
   </style>
+
 </head>
+
 <body>
+
+  <!-- Collage de fotos estilo vintage -->
+  <section class="photo-container">
+    <div class="photo-item">
+      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/refs/heads/main/Screenshot_20250414_172546.jpg" alt="Foto 1">
+    </div>
+    <div class="photo-item">
+      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/refs/heads/main/Screenshot_20250414_172048%7E2.jpg" alt="Foto 2">
+    </div>
+    <div class="photo-item">
+      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/refs/heads/main/Screenshot_20250414_172429.jpg" alt="Foto 3">
+    </div>
+  </section>
+
   <header>
     <div class="titulo-principal">
       <p>Sergio Sánchez de la Cruz & Mariana Dorantes Pérez</p>
@@ -144,5 +222,7 @@
     </audio>
     <small>🔈 Si no escuchas la música, toca el botón de play 🎵</small>
   </section>
+
 </body>
+
 </html>
