@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Invitación de Boda y Cumpleaños</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet"/>
   <style>
     body {
-      height: 100%;
       font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 0;
@@ -20,18 +17,8 @@
 
     header {
       text-align: center;
-      padding: 3rem 2rem;
+      padding: 2rem 1rem;
       background: rgba(0, 0, 0, 0.6);
-    }
-
-    .titulo-principal p {
-      font-size: 2rem;
-      margin: 0.5rem 0;
-    }
-
-    .fecha {
-      font-size: 2.2rem;
-      margin-top: 1rem;
     }
 
     section {
@@ -40,6 +27,33 @@
       background: rgba(0, 0, 0, 0.5);
       margin: 1rem;
       border-radius: 1rem;
+    }
+
+    .collage {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2rem 1rem;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .polaroid {
+      background: #fff;
+      padding: 10px 10px 30px 10px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+      width: 180px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #333;
+      font-style: italic;
+    }
+
+    .polaroid img {
+      width: 100%;
+      border-radius: 5px;
+      object-fit: cover;
     }
 
     .itinerary, .map, .rsvp, .gifts {
@@ -77,108 +91,51 @@
       width: 100%;
     }
 
-    @media (max-width: 600px) {
-      .titulo-principal p {
-        font-size: 1.5rem;
-      }
-
-      .fecha {
-        font-size: 1.4rem;
-      }
-
-      section {
-        padding: 1rem;
-        margin: 0.5rem;
-      }
-
-      .button {
-        width: 90%;
-        padding: 0.8rem 1rem;
-        font-size: 1rem;
-      }
-
-      iframe {
-        height: 250px;
-      }
-
-      audio {
-        width: 100%;
-      }
-    }
-
-    .collage {
-      padding: 2rem;
-      background-color: rgba(255, 255, 255, 0.15);
-      border-radius: 1rem;
-      margin: 2rem auto;
-      max-width: 1000px;
-      animation: fadeIn 2s ease-in;
-    }
-
-    .collage-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.5rem;
-      justify-items: center;
-    }
-
-    .collage .photo {
-      background-color: #fefefe;
-      padding: 1rem;
-      border-radius: 0.5rem;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-      transform: rotate(-1deg);
-      transition: transform 0.3s ease;
-    }
-
-    .collage .photo:hover {
-      transform: scale(1.02) rotate(0deg);
-    }
-
-    .collage img {
-      width: 100%;
-      height: auto;
-      border-radius: 0.5rem;
-      filter: sepia(15%) contrast(105%) brightness(95%);
-    }
-
-    .collage .photo p {
-      margin-top: 0.8rem;
-      font-size: 1.1rem;
-      color: #333;
-      font-weight: 600;
-      text-align: center;
-    }
-
-    @media (max-width: 600px) {
-      .collage .photo p {
-        font-size: 1rem;
-      }
-    }
-
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    em {
+      display: block;
+      font-style: italic;
+      margin-top: 1rem;
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <div class="titulo-principal">
-      <p>Sergio Sánchez de la Cruz & Mariana Dorantes Pérez</p>
-      <p>¡Nos casamos!</p>
-      <p>Y también celebramos el cumpleaños número 3 de nuestra hija Giomara Sánchez Dorantes</p>
+
+  <div class="collage">
+    <div class="polaroid">
+      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/main/fotos/1000358197.jpg" alt="Gio 1" />
     </div>
-    <p class="fecha"><strong>27 de septiembre del 2025</strong></p>
+    <div class="polaroid">
+      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/main/fotos/1000358198.jpg" alt="Padres 1" />
+    </div>
+    <div class="polaroid">
+      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/main/fotos/1000358199.jpg" alt="Gio 2" />
+    </div>
+    <div class="polaroid">
+      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/main/fotos/foto4.jpg" alt="Padres 2" />
+    </div>
+    <div class="polaroid">
+      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/main/fotos/foto5.jpg" alt="Gio 3" />
+    </div>
+    <div class="polaroid">
+      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/main/fotos/foto6.jpg" alt="Padres 3" />
+    </div>
+  </div>
+
+  <header>
+    <p>Nos complace invitarlos a la ceremonia religiosa por motivo de nuestra unión en matrimonio: <br><strong>Sergio Sánchez de la Cruz y Mariana Dorantes Pérez</strong> y la presentación de nuestra hermosa hija <strong>Giomara Sánchez Dorantes</strong>.</p>
+    <em>"Y nosotros hemos conocido y creído el amor que Dios tiene para con nosotros. Dios es amor; y el que permanece en amor, permanece en Dios, y Dios en él" Juan 4:16</em>
   </header>
+
+  <section class="itinerary">
+    <h2>Itinerario</h2>
+    <p><strong>5:00 PM:</strong> Ceremonia Religiosa</p>
+    <p><strong>7:00 PM:</strong> Recepción, inicio de cena y Mariachi</p>
+    <p><strong>8:30 PM:</strong> Apertura de Mesa de Dulces</p>
+    <p><strong>9:00 PM:</strong> Vals y Partida de Pastel</p>
+    <p><strong>10:00 PM:</strong> Sorpresa y Sonido Libre</p>
+    <p><strong>11:00 PM:</strong> Banda</p>
+    <p><strong>12:00 AM:</strong> Sonido Libre</p>
+  </section>
 
   <section class="map">
     <h2>Ceremonia Religiosa</h2>
@@ -194,21 +151,11 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.560839!2d-97.3888888!3d18.4620000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c5c8b612345678%3A0xabcdef1234567890!2sAv.%20Portes%20Gil%202203%2C%20San%20Nicol%C3%A1s%20Tetitzintla%2C%2075710%20Tehuac%C3%A1n%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1713093200000" allowfullscreen></iframe>
   </section>
 
-  <section class="itinerary">
-    <h2>Itinerario</h2>
-    <p><strong>5:00 PM:</strong> Ceremonia Religiosa</p>
-    <p><strong>7:00 PM:</strong> Recepción, Cena y Mariachi</p>
-    <p><strong>8:30 PM:</strong> Apertura de Mesa de Dulces</p>
-    <p><strong>9:00 PM:</strong> Vals y Partida del Pastel</p>
-    <p><strong>10:00 PM:</strong> Show Sorpresa y Sonido Libre</p>
-    <p><strong>11:00 PM:</strong> Banda</p>
-    <p><strong>12:00 AM:</strong> Sonido Libre</p>
-  </section>
-
   <section class="rsvp">
     <h2>Confirma tu asistencia</h2>
     <p>Haz clic en el siguiente botón para confirmar y agregar número de invitados.</p>
     <a class="button" href="https://forms.gle/p4SUp4NTyiQrhQwGA" target="_blank">Confirmar asistencia</a>
+    <p><strong>Confirma tu asistencia antes del 31 de Mayo</strong></p>
   </section>
 
   <section class="gifts">
@@ -218,41 +165,12 @@
 
   <section>
     <h2>Nuestra canción</h2>
-    <p>All of Me - John Legend</p>
+    <p>"Maestro" - Hans Zimmer</p>
     <audio controls autoplay loop>
-      <source src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/main/imtiaz252_all-of-me-john-legend-lindsey-stirling.mp3" type="audio/mpeg">
+      <source src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/main/maestro-hans-zimmer.mp3" type="audio/mpeg">
     </audio>
     <small>🔈 Si no escuchas la música, toca el botón de play 🎵</small>
   </section>
 
-  <section class="collage">
-    <h2 style="text-align:center; margin-bottom: 2rem;">Nuestro Recuerdo</h2>
-    <div class="collage-grid">
-      <div class="photo">
-        <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/refs/heads/main/Screenshot_20250414_172546.jpg" alt="GRACIAS">
-        <p>GRACIAS</p>
-      </div>
-      <div class="photo">
-        <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/refs/heads/main/Screenshot_20250414_172048%7E2.jpg" alt="POR">
-        <p>POR</p>
-      </div>
-      <div class="photo">
-        <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/refs/heads/main/Screenshot_20250414_172429.jpg" alt="SER">
-        <p>SER</p>
-      </div>
-      <div class="photo">
-        <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/refs/heads/main/Screenshot_20250414_172134%7E2.jpg" alt="PARTE">
-        <p>PARTE</p>
-      </div>
-      <div class="photo">
-        <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/refs/heads/main/Screenshot_20250414_172643.jpg" alt="DE NUESTRA">
-        <p>DE NUESTRA</p>
-      </div>
-      <div class="photo">
-        <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/refs/heads/main/Screenshot_20250414_172109%7E2.jpg" alt="HISTORIA">
-        <p>HISTORIA</p>
-      </div>
-    </div>
-  </section>
 </body>
 </html>
