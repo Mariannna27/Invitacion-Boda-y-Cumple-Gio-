@@ -15,8 +15,14 @@
       color: #fff;
     }
 
-    header, section {
+    header {
+      text-align: center;
       padding: 2rem 1rem;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    section {
+      padding: 2rem;
       text-align: center;
       background: rgba(0, 0, 0, 0.5);
       margin: 1rem;
@@ -28,17 +34,20 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 1rem;
-      padding: 2rem 1rem 0;
+      padding: 2rem 1rem;
+      background: rgba(0, 0, 0, 0.5);
     }
 
     .polaroid {
       background: #fff;
-      padding: 10px;
+      padding: 10px 10px 30px 10px;
       border-radius: 5px;
       box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
       width: 180px;
       text-align: center;
+      font-size: 0.9rem;
       color: #333;
+      font-style: italic;
     }
 
     .polaroid img {
@@ -47,13 +56,7 @@
       object-fit: cover;
     }
 
-    .caption {
-      margin-top: 10px;
-      font-style: italic;
-      font-weight: bold;
-    }
-
-    .map, .itinerary, .rsvp, .gifts {
+    .itinerary, .map, .rsvp, .gifts {
       max-width: 700px;
       margin: 2rem auto;
       background: rgba(255, 255, 255, 0.1);
@@ -93,45 +96,58 @@
       font-style: italic;
       margin-top: 1rem;
     }
+
+    #countdown {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
   </style>
 </head>
 <body>
 
-  <!-- COLLAGE -->
+  <section>
+    <h2>Nuestra canción</h2>
+    <p>"Maestro" - Hans Zimmer</p>
+    <audio controls autoplay loop>
+      <source src="maestro-the-holiday.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio>
+    <small>🔈 Si no escuchas la música, toca el botón de play 🎵</small>
+  </section>
+
   <div class="collage">
     <div class="polaroid">
-      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/refs/heads/main/Screenshot_20250414_172546.jpg" alt="Foto 1">
-      <div class="caption">GRACIAS</div>
+      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/refs/heads/main/Screenshot_20250414_172546.jpg" alt="Gio 1" />
+      <div>GRACIAS</div>
     </div>
     <div class="polaroid">
-      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/refs/heads/main/Screenshot_20250414_172048%7E2.jpg" alt="Foto 2">
-      <div class="caption">POR</div>
+      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/refs/heads/main/Screenshot_20250414_172048%7E2.jpg" alt="Padres 1" />
+      <div>POR</div>
     </div>
     <div class="polaroid">
-      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/refs/heads/main/Screenshot_20250414_172429.jpg" alt="Foto 3">
-      <div class="caption">SER</div>
+      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/refs/heads/main/Screenshot_20250414_172429.jpg" alt="Gio 2" />
+      <div>SER</div>
     </div>
     <div class="polaroid">
-      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/refs/heads/main/Screenshot_20250414_172134%7E2.jpg" alt="Foto 4">
-      <div class="caption">PARTE</div>
+      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/refs/heads/main/Screenshot_20250414_172134%7E2.jpg" alt="Padres 2" />
+      <div>PARTE</div>
     </div>
     <div class="polaroid">
-      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/refs/heads/main/Screenshot_20250414_172643.jpg" alt="Foto 5">
-      <div class="caption">DE</div>
+      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/refs/heads/main/Screenshot_20250414_172643.jpg" alt="Gio 3" />
+      <div>DE</div>
     </div>
     <div class="polaroid">
-      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/refs/heads/main/Screenshot_20250414_172109%7E2.jpg" alt="Foto 6">
-      <div class="caption">NUESTRA HISTORIA</div>
+      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/refs/heads/main/Screenshot_20250414_172109%7E2.jpg" alt="Padres 3" />
+      <div>NUESTRA HISTORIA</div>
     </div>
   </div>
 
-  <!-- ENCABEZADO -->
   <header>
     <p>Nos complace invitarlos a la ceremonia religiosa por motivo de nuestra unión en matrimonio: <br><strong>Sergio Sánchez de la Cruz y Mariana Dorantes Pérez</strong> y la presentación de nuestra hermosa hija <strong>Giomara Sánchez Dorantes</strong>.</p>
     <em>"Y nosotros hemos conocido y creído el amor que Dios tiene para con nosotros. Dios es amor; y el que permanece en amor, permanece en Dios, y Dios en él" Juan 4:16</em>
   </header>
 
-  <!-- CEREMONIA -->
   <section class="map">
     <h2>Ceremonia Religiosa</h2>
     <p>Iglesia María Madre de Dios - 5:00 PM</p>
@@ -139,7 +155,6 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.667645!2d-97.3915653!3d18.4591195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c5c8a2dfb2ab2d%3A0x9b24d48deed0b7a3!2sCalle%209%20Nte%202601%2C%20Santiago%20Tula%2C%2075720%20Tehuac%C3%A1n%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1713093000000" allowfullscreen></iframe>
   </section>
 
-  <!-- RECEPCIÓN -->
   <section class="map">
     <h2>Recepción</h2>
     <p>Salón La Peña del Cid - 7:00 PM</p>
@@ -147,7 +162,6 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.560839!2d-97.3888888!3d18.4620000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c5c8b612345678%3A0xabcdef1234567890!2sAv.%20Portes%20Gil%202203%2C%20San%20Nicol%C3%A1s%20Tetitzintla%2C%2075710%20Tehuac%C3%A1n%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1713093200000" allowfullscreen></iframe>
   </section>
 
-  <!-- ITINERARIO -->
   <section class="itinerary">
     <h2>Itinerario</h2>
     <p><strong>5:00 PM:</strong> Ceremonia Religiosa</p>
@@ -159,7 +173,6 @@
     <p><strong>12:00 AM:</strong> Sonido Libre</p>
   </section>
 
-  <!-- CONFIRMACIÓN -->
   <section class="rsvp">
     <h2>Confirma tu asistencia</h2>
     <p>Haz clic en el siguiente botón para confirmar y agregar número de invitados.</p>
@@ -167,55 +180,41 @@
     <p><strong>Confirma tu asistencia antes del 31 de Mayo</strong></p>
   </section>
 
-  <!-- REGALOS -->
   <section class="gifts">
     <h2>Mesa de regalos</h2>
     <a class="button" href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51660329" target="_blank">Ver mesa de regalos</a>
   </section>
 
-  <!-- CANCIÓN -->
-   <section>
-  <h2>Nuestra canción</h2>
-  <p>"Maestro" - Hans Zimmer</p>
-  <audio id="audio" controls autoplay loop>
-    <source src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/refs/heads/main/maestro-the-holiday.mp3" type="audio/mpeg">
-  </audio>
-  <small>🔈 Si no escuchas la música, toca el botón de play 🎵</small>
-  
-  <!-- Contador regresivo -->
-  <div id="countdown" style="text-align: center; font-size: 2rem; color: #fff; margin-top: 2rem;">
-    <h3>¡La cuenta atrás ha comenzado!</h3>
-    <p id="timer"></p>
-  </div>
-</section>
+  <section>
+    <h2>Faltan...</h2>
+    <div id="countdown"></div>
+  </section>
 
-<script>
-  // Configura la fecha y hora del evento (27 de septiembre de 2025 a las 5:00 PM)
-  var eventDate = new Date("2025-09-27T17:00:00").getTime();
+  <script>
+    const countdown = document.getElementById("countdown");
+    const eventDate = new Date("September 27, 2025 17:00:00").getTime();
 
-  // Función que actualiza el contador cada segundo
-  var x = setInterval(function() {
-    var now = new Date().getTime();
-    var distance = eventDate - now;
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = eventDate - now;
 
-    // Cálculo de días, horas, minutos y segundos
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      if (distance < 0) {
+        countdown.innerHTML = "¡Ya comenzó!";
+        return;
+      }
 
-    // Muestra el resultado
-    document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Si el contador llega a cero, muestra un mensaje
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("timer").innerHTML = "¡Es el gran día!";
+      countdown.innerHTML = `${days} días, ${hours} hrs, ${minutes} min, ${seconds} seg`;
     }
-  }, 1000);
-</script>
-  
 
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
 
 </body>
-</html>
+  </html>
+  
