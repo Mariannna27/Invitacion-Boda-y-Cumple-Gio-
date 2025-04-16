@@ -15,16 +15,10 @@
       color: #fff;
     }
 
-    header {
+    header, section {
       text-align: center;
       padding: 2rem 1rem;
       background: rgba(0, 0, 0, 0.6);
-    }
-
-    section {
-      padding: 2rem;
-      text-align: center;
-      background: rgba(0, 0, 0, 0.5);
       margin: 1rem;
       border-radius: 1rem;
     }
@@ -34,8 +28,9 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 1rem;
-      padding: 2rem 1rem;
+      padding: 2rem 1rem 0 1rem;
       background: rgba(0, 0, 0, 0.5);
+      animation: fadeIn 2s ease-in;
     }
 
     .polaroid {
@@ -45,23 +40,16 @@
       box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
       width: 180px;
       text-align: center;
-      font-size: 0.9rem;
+      font-size: 1rem;
       color: #333;
-      font-style: italic;
+      font-weight: bold;
     }
 
     .polaroid img {
       width: 100%;
+      height: auto;
       border-radius: 5px;
       object-fit: cover;
-    }
-
-    .polaroid p {
-      margin-top: 1rem;
-      font-size: 1.2rem;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1px;
     }
 
     .itinerary, .map, .rsvp, .gifts {
@@ -104,46 +92,50 @@
       font-style: italic;
       margin-top: 1rem;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
 
+  <!-- Collage de fotos con frase -->
   <div class="collage">
     <div class="polaroid">
-      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/main/fotos/1000358197.jpg" alt="Gio 1" />
-      <p>GRACIAS</p>
+      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/main/fotos/1000358197.jpg" alt="Foto 1" />
+      GRACIAS
     </div>
     <div class="polaroid">
-      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/main/fotos/1000358198.jpg" alt="Padres 1" />
-      <p>POR</p>
+      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/main/fotos/1000358198.jpg" alt="Foto 2" />
+      POR
     </div>
     <div class="polaroid">
-      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/main/fotos/1000358199.jpg" alt="Gio 2" />
-      <p>SER</p>
+      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/main/fotos/1000358199.jpg" alt="Foto 3" />
+      SER
     </div>
     <div class="polaroid">
-      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/main/fotos/foto4.jpg" alt="Padres 2" />
-      <p>PARTE</p>
+      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/main/fotos/foto4.jpg" alt="Foto 4" />
+      PARTE
     </div>
     <div class="polaroid">
-      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/main/fotos/foto5.jpg" alt="Gio 3" />
-      <p>DE</p>
+      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/main/fotos/foto5.jpg" alt="Foto 5" />
+      DE
     </div>
     <div class="polaroid">
-      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/main/fotos/foto6.jpg" alt="Padres 3" />
-      <p>NUESTRA</p>
-    </div>
-    <div class="polaroid">
-      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/main/fotos/foto6.jpg" alt="Historia" />
-      <p>HISTORIA</p>
+      <img src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/main/fotos/foto6.jpg" alt="Foto 6" />
+      NUESTRA HISTORIA
     </div>
   </div>
 
+  <!-- Encabezado -->
   <header>
     <p>Nos complace invitarlos a la ceremonia religiosa por motivo de nuestra unión en matrimonio: <br><strong>Sergio Sánchez de la Cruz y Mariana Dorantes Pérez</strong> y la presentación de nuestra hermosa hija <strong>Giomara Sánchez Dorantes</strong>.</p>
     <em>"Y nosotros hemos conocido y creído el amor que Dios tiene para con nosotros. Dios es amor; y el que permanece en amor, permanece en Dios, y Dios en él" Juan 4:16</em>
   </header>
 
+  <!-- Itinerario -->
   <section class="itinerary">
     <h2>Itinerario</h2>
     <p><strong>5:00 PM:</strong> Ceremonia Religiosa</p>
@@ -155,20 +147,23 @@
     <p><strong>12:00 AM:</strong> Sonido Libre</p>
   </section>
 
+  <!-- Ubicación ceremonia -->
   <section class="map">
     <h2>Ceremonia Religiosa</h2>
     <p>Iglesia María Madre de Dios - 5:00 PM</p>
     <p>Dirección: Calle 9 Nte 2601, Santiago Tula, 75720 Tehuacán, Pue.</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.667645!2d-97.3915653!3d18.4591195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c5c8a2dfb2ab2d%3A0x9b24d48deed0b7a3!2sCalle%209%20Nte%202601%2C%20Santiago%20Tula%2C%2075720%20Tehuac%C3%A1n%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1713093000000" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." allowfullscreen></iframe>
   </section>
 
+  <!-- Ubicación recepción -->
   <section class="map">
     <h2>Recepción</h2>
     <p>Salón La Peña del Cid - 7:00 PM</p>
     <p>Dirección: Av. Portes Gil 2203, San Nicolás Tetitzintla, 75710 Tehuacán, Pue.</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.560839!2d-97.3888888!3d18.4620000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c5c8b612345678%3A0xabcdef1234567890!2sAv.%20Portes%20Gil%202203%2C%20San%20Nicol%C3%A1s%20Tetitzintla%2C%2075710%20Tehuac%C3%A1n%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1713093200000" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." allowfullscreen></iframe>
   </section>
 
+  <!-- Confirmación -->
   <section class="rsvp">
     <h2>Confirma tu asistencia</h2>
     <p>Haz clic en el siguiente botón para confirmar y agregar número de invitados.</p>
@@ -176,15 +171,17 @@
     <p><strong>Confirma tu asistencia antes del 31 de Mayo</strong></p>
   </section>
 
+  <!-- Mesa de regalos -->
   <section class="gifts">
     <h2>Mesa de regalos</h2>
     <a class="button" href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51660329" target="_blank">Ver mesa de regalos</a>
   </section>
 
+  <!-- Canción -->
   <section>
     <h2>Nuestra canción</h2>
     <p>"Maestro" - Hans Zimmer</p>
-    <audio controls autoplay>
+    <audio controls autoplay loop>
       <source src="https://raw.githubusercontent.com/Mariannna27/Invitacion-Boda-y-Cumple-Gio-/main/maestro-hans-zimmer.mp3" type="audio/mpeg">
     </audio>
     <small>🔈 Si no escuchas la música, toca el botón de play 🎵</small>
