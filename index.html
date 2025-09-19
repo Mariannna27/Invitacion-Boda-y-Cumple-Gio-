@@ -428,68 +428,7 @@
 
     <a class="button" href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51660329" target="_blank">Ver mesa de regalos</a>
 
-  </section>
-
-
-
-  <section>
-
-    <h2>La cuenta regresiva ha comenzado!</h2>
-
-    <div id="countdown"></div>
-
-  </section>
-
-
-
-  <script>
-
-    const countdown = document.getElementById("countdown");
-
-    const eventDate = new Date("September 27, 2025 17:00:00").getTime();
-
-
-
-    function updateCountdown() {
-
-      const now = new Date().getTime();
-
-      const distance = eventDate - now;
-
-
-
-      if (distance < 0) {
-
-        countdown.innerHTML = "¡Ya comenzó!";
-
-        return;
-
-      }
-
-
-
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-
-
-      countdown.innerHTML = `${days} días, ${hours} hrs, ${minutes} min, ${seconds} seg`;
-
-    }
-
-
-
-    setInterval(updateCountdown, 1000);
-
-    updateCountdown();
-
-  </script>
-
+  
 
 
 </body>
@@ -497,6 +436,7 @@
   </html>
 
   
+
 
 
 
